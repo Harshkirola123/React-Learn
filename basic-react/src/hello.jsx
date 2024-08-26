@@ -1,12 +1,15 @@
-function Hello(){
-    return(
-        <h3>Hello World</h3>
-    );
-}
+import React from 'react';
 
-export default Hello;
-function print(){
-    return(
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quos temporibus debitis eligendi, iste doloribus beatae molestiae sapiente voluptas itaque fugit nisi iure sint, cupiditate enim, repudiandae repellat exercitationem aut.</p>
-    );
-}
+const aa = document.createElement('a');
+aa.innerHTML = "Click here";
+aa.setAttribute('href',"https://docs.chaicode.com/branches-in-git/");
+aa.setAttribute('target','_blank');
+
+const ATag = () => {
+  return (
+    // <a href="https://docs.chaicode.com/branches-in-git/" target='_blank'>Click here</a>
+    <aa /> 
+);
+};
+
+export default ATag;
